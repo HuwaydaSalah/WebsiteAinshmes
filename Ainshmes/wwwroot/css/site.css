@@ -159,11 +159,13 @@
 /* إعدادات زر سجل الآن */
 .btn-custom {
     background-color: #D7B46A;
-    color: #FFFFFF; 
+    color: #FFFFFF;
     padding: 5px 20px;
     font-weight: bold;
     border-radius: 25px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    animation:backInLeft;
+    animation-duration: 2s;
 }
 
     .btn-custom:hover {
@@ -207,9 +209,126 @@
         margin: 10px 0 0;
     }
 /*--------------------------------------------------------------
-#  boss Section
+#  Section(حول المعهد)
 --------------------------------------------------------------*/
 
+/* قسم الرسالة والرؤية والهدف والقيم */
+.mission-vision {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+    .mission-vision h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+.cardmm {
+    text-align: center;
+    width: 600px;
+    height: 360px;
+}
+
+    .cardmm h3 {
+        margin-top: 10px;
+        font-size: 1.25rem;
+    }
+/*--------------------------------------------------------------
+#  Contact Section
+--------------------------------------------------------------*/
+
+.contact .info-item {
+    background-color: #FFFFFF;
+    padding: 20px 0 30px 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+    .contact .info-item i {
+        color: #C4A76A;
+        width: 56px;
+        height: 56px;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        transition: all 0.3s ease-in-out;
+        border-radius: 50%;
+        border: 2px dashed #C4A76A;
+    }
+
+ .contact .info-item h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin: 10px 0;
+        color: #0C0A07;
+        transition: color 0.3s ease;
+    }
+
+.contact .info-item:hover h3 {
+        color: #C4A76A; 
+    }
+
+.contact .info-item p {
+        padding: 0;
+        margin-bottom: 0;
+        font-size: 1rem;
+        color: #0C0A07;
+    }
+
+.contact .info-item:hover p {
+        color: #C4A76A; /*لون التأثير عند المرور بالفأرة */
+    }
+
+.contact .php-email-form {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+    .contact .php-email-form input[type=text],
+    .contact .php-email-form input[type=email],
+    .contact .php-email-form textarea {
+        font-size: 1rem;
+        padding: 10px 15px;
+        box-shadow: none;
+        border-radius: 0;
+        color: #0C0A07;
+        background-color: #fff;
+        border-color: #545350;
+    }
+
+        .contact .php-email-form input[type=text]:focus,
+        .contact .php-email-form input[type=email]:focus,
+        .contact .php-email-form textarea:focus {
+            border-color: #C4A76A;
+            box-shadow: 0 0 5px #C4A76A;
+        }
+
+        .contact .php-email-form input[type=text]::placeholder,
+        .contact .php-email-form input[type=email]::placeholder,
+        .contact .php-email-form textarea::placeholder {
+            color: #0C0A07;
+        }
+
+    .contact .php-email-form button[type=submit] {
+        color: #fff;
+        background: #C4A76A;
+        border: 0;
+        padding: 10px 24px;
+        transition: 0.4s;
+        transition: background 0.4s, transform 0.3s;
+        border-radius: 50px;
+    }
+
+
+        .contact .php-email-form button[type=submit]:hover {
+            background: #BF984E;
+            transform: scale(1.05); 
+        }   
+/*--------------------------------------------------------------
+#  boss Section
+--------------------------------------------------------------*/
 .content-section {
     padding: 40px;
 }
@@ -218,16 +337,14 @@
     border-radius: 50%;
     margin: 0 auto;
 }
-
 .dean-message {
-    font-size: 18px;
+    font-size: 1.5rem;
     line-height: 1.8;
     color: #333;
 }
 /*--------------------------------------------------------------
 #  Team Section
 --------------------------------------------------------------*/
-
 .team .member {
     position: relative;
     overflow: hidden;
@@ -243,7 +360,7 @@
         overflow: hidden;
     }
 
-        .team .member .member-img img {
+    .team .member .member-img img {
             transition: 0.5s;
         }
 
@@ -258,37 +375,41 @@
         transform: translateX(-50%);
         display: flex;
         gap: 10px;
+        opacity: 0; 
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(20px); 
     }
 
-        .team .member .social a {
-            color: #fff;
-            background: #1d71b8;
-            border-radius: 50%;
-            padding: 8px;
-            transition: 0.3s;
+    .team .member:hover .social {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    .team .member .social a {
+        color: #fff;
+        background: #fff; 
+        border-radius: 50%;
+        padding: 8px;
+        transition: background 0.3s;
+    }
+
+     .team .member .social a:hover {
+            background: #C4A76A;
         }
-
-            .team .member .social a:hover {
-                background: #007bff;
-            }
-
-.team .member-info {
+    .team .member-info {
     padding: 20px;
 }
-
     .team .member-info h4 {
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 10px;
         color: #333;
     }
-
     .team .member-info span {
         display: block;
         font-size: 14px;
         color: #555;
     }
-
 /*--------------------------------------------------------------
 # Footer Section
 --------------------------------------------------------------*/
@@ -357,11 +478,11 @@ footer {
     margin-right: 15px;
     font-size: 20px;
     text-decoration: none;
-    transition: color 0.3s; /* تأثيرات عند التحويم */
+    transition: color 0.3s; 
 }
 
     .social-media a:hover {
-        color: #C4A76A; /* لون مميز عند التحويم */
+        color: #C4A76A; 
     }
 
 /*جزء جميع الحقوق محفوظة*/
@@ -394,8 +515,6 @@ footer {
 /*--------------------------------------------------------------
 #  Scroll top
 --------------------------------------------------------------*/
-
-/* السهم يكون مخفيًا بشكل افتراضي */
 #back-to-top {
     display:none; 
     position: fixed; 
@@ -411,8 +530,8 @@ footer {
     transition: opacity 0.3s; 
 }
 
-    /* عند التحويم عليه */
+  
     #back-to-top:hover {
-        background-color: #A6853D; /* لون مختلف عند التمرير */
+        background-color: #A6853D;
     }
 
