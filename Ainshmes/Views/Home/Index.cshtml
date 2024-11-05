@@ -1,245 +1,197 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <!-- Vendor CSS Files -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="vendor/aos/aos.css" rel="stylesheet">
-    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="">
-    <link href="css/styles.css" rel="stylesheet" />
+  
+    <style>
+     
+
+        /* ﬁ”„ «·—”«·… Ê«·—ƒÌ… */
+        .mission-vision {
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+            .mission-vision h2 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+ 
+
+         .card {
+         
+          text-align: center;
+        
+        } 
+
+            .card h3 {
+                margin-top: 10px;
+                font-size: 20px;
+            } 
+
+        /* ﬁ”„ «·≈‰Ã«“«  */
+        .achievements {
+            padding: 40px 20px;
+            background-color: #eee;
+            text-align: center;
+        }
+
+        .achievement-stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .stat h3 {
+            font-size: 36px;
+            color: #C7A250;
+        }
+
+        .stat p {
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        /* ﬁ”„ √⁄÷«¡ ÂÌ∆… «· œ—Ì” */
+        .faculty {
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .faculty-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .faculty-card {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 200px;
+        }
+
+            .faculty-card img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .faculty-card h3 {
+                margin-top: 10px;
+                font-size: 18px;
+            }
+       
+
+
+    </style>
 </head>
 <body>
     <!-- ﬁ”„ «·»ÿ· (Hero Section) -->
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-        <div class="container">
-            <div class="row gy-4">
-                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <h1>„—Õ»‹‹‹‹‹‹‹‹« »ﬂ‹‹„ ›‹‹Ì</h1>
-                    <h1>„⁄Âœ ⁄Ì‰ ‘„”</h1>
-                    <p>ÕÌÀ ‰—”Ì œ⁄«∆„ «· ›Êﬁ „‰ Œ·«· «· ⁄·Ì„ Ê ‘ÃÌ⁄ «·≈»œ«⁄ Ê «·«» ﬂ«—</p>
-                    <div class="d-flex">
-                        <a href="#" class="buy-btn">”Ã· «·√‰</a>
-                        <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"></a>
-                    </div>
-                </div>
-                <div class="col-lg-6 order-1 order-lg-2 hero-img">
-                    <img src="/img/1.jpg" class="img-fluid animated" alt="">
-                </div>
-            </div>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>„⁄Âœ ⁄Ì‰ ‘„” «·⁄«·Ì</h1>
+            <p>«·„” ﬁ»· »Ì‰ ÌœÌﬂ</p>
         </div>
-    </section>
-    <!-- Clients Section -->
-    <div class="text-center mb-5 mt-5">
-        <div class="container section-title" data-aos="fade-up">
-            <h2>«·«ﬁ”«„ «·⁄·„Ì…</h2>
-            <img src="img/imgdividor.svg" alt="Description of SVG">
-        </div>
-
-
-    </div>
-    <section id="clients" class="clients section light-background">
-        <div class="container" data-aos="fade-up">
-            <div class="row gy-4 justify-content-center">
-
-                <div class="col-xl-2 col-md-3 col-6 client-logo">
-                    <img src="img/clint2.svg" alt="Description of SVG">
-                </div>
-                <!-- End Client Item -->
-                <div class="col-xl-2 col-md-3 col-6 client-logo">
-                    <img src="img/clint3.svg" alt="Description of SVG">
-                </div>
-                <!-- End Client Item -->
-
-                <div class="col-xl-2 col-md-3 col-6 client-logo">
-                    <img src="img/clint2.svg" alt="Description of SVG">
-                </div>
-                <!-- End Client Item -->
-                <div class="col-xl-2 col-md-3 col-6 client-logo">
-                    <img src="img/clint3.svg" alt="Description of SVG">
-                </div>
-                <!-- End Client Item -->
-
-            </div>
-        </div>
+        <img src="~/img/call.jpg" alt="’Ê—… «·„⁄Âœ" class="hero-image">
     </section>
 
-    <div class="text-center mb-5 mt-5">
-        <div class="container section-title" data-aos="fade-up">
-            <h2>«·«ﬁ”«„ «·⁄·„Ì…</h2>
-            <img src="img/imgdividor.svg" alt="Description of SVG">
-        </div>
-    </div>
-    <!-- About Start -->
-    <div class="container-fluid about py-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-xl-7 wow fadeInLeft" data-aos="fade-up">
-                    <div>
-                        <h1 class="display-5 mb-4">—Õ·… «·„⁄—›…  »œ√ „‰ Â‰«</h1>
-                        <p class="mb-4">
-                            "„⁄Âœ ⁄Ì‰ ‘„”" ÂÊ „ƒ””…  ⁄·Ì„Ì… „ Œ’’…  ”⁄Ï · ﬁœÌ„  ⁄·Ì„ ⁄«·Ì «·ÃÊœ… ›Ì „Ã«·«  «·⁄·Ê„ «·‘—⁄Ì… Ê«·≈”·«„Ì…. ÌÂœ› «·„⁄Âœ ≈·Ï ≈⁄œ«œ ÿ·«» Êÿ«·»«  Ì „ ⁄Ê‰ »„⁄—›… ⁄„Ìﬁ… Ê ›ﬂÌ— ‰ﬁœÌ „»‰Ì ⁄·Ï √”” «·‘—Ì⁄… «·≈”·«„Ì…. Ìıﬁœ„ «·„⁄Âœ »Ì∆…  ⁄·Ì„Ì… ‘«„·…  Ã„⁄ »Ì‰ «· ⁄·Ì„ «·√ﬂ«œÌ„Ì Ê«· ÊÃÌÂ «·œÌ‰Ì° ÕÌÀ Ì”⁄Ï · —”ÌŒ «·ﬁÌ„ «·√Œ·«ﬁÌ… Ê«· ⁄«·Ì„ «·≈”·«„Ì… „‰ Œ·«· »—«„Ã œ—«”Ì… „ ﬂ«„·… Êﬂ«œ—  ⁄·Ì„Ì „ƒÂ·.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-5 wow fadeInRight" data-aos="fade-up">
-                    <div class="bg-primary rounded position-relative overflow-hidden">
-                        <img src="img/img/1.jpg.png" class="img-fluid rounded w-100" alt="">
-                        <div class="" style="position: absolute; top: -15px; right: -15px;">
-                            <img src="img/img/1.jpg" class="img-fluid" style="width: 150px; height: 150px; opacity: 0.7;" alt="">
-                        </div>
-                        <div class="" style="position: absolute; top: -20px; left: 10px; transform: rotate(90deg);">
-                            <img src="img/1.jpg" class="img-fluid" style="width: 100px; height: 150px; opacity: 0.9;" alt="">
-                        </div>
-                        <div class="rounded-bottom">
-                            <img src="img/1.jpg" class="img-fluid rounded-bottom w-100" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-    <!-- Services Section -->
-    <section id="services" class="services section">
-        <!-- Section Title -->
-        <div class="text-center mb-5 mt-5">
-            <div class="container section-title" data-aos="fade-up">
-                <h2>«·«ﬁ”«„ «·⁄·„Ì…</h2>
-                <img src="img/imgdividor.svg" alt="Description of SVG">
-            </div>
-
+    <!-- ﬁ”„ «·—”«·… Ê«·—ƒÌ… -->
+    <section class="mission-vision">
+        <div class="text-center mb-5">
+            <h2 class="display-6 mb-0"><span class="section-title d-inline"> Õ‹‹Ê· «·„‹⁄‹Âœ</span></h2>
+            <!-- Â‰« ”Ì „ ≈œŒ«· ﬂÊœ SVG -->
+            <svg width="222" height="29" viewBox="0 0 222 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M53.3366 9.94012H157.981" stroke="#C7A250" stroke-width="3" stroke-linecap="round" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M36.8875 1.67181C40.5505 7.38272 49.4551 9.52896 54.0337 10.0398C49.4309 10.5534 40.4564 13.0806 36.83 19.0138C31.186 16.4915 26.3049 13.6406 21.8074 10.1358C27.1519 6.55975 31.6571 3.99157 36.8875 1.67181Z" fill="#C7A250" fill-opacity="0.75" />
+                <path d="M36.8875 1.67181L38.1501 0.861973C37.7505 0.238893 36.956 0.000511408 36.2794 0.300624L36.8875 1.67181ZM54.0337 10.0398L54.2 11.5306C54.9594 11.4458 55.5337 10.8039 55.5337 10.0398C55.5337 9.27576 54.9594 8.63379 54.2 8.54907L54.0337 10.0398ZM36.83 19.0138L36.2179 20.3833C36.9065 20.691 37.7165 20.4396 38.1098 19.7961L36.83 19.0138ZM21.8074 10.1358L20.9733 8.88913C20.5731 9.15688 20.3258 9.60044 20.3084 10.0816C20.291 10.5627 20.5056 11.023 20.8854 11.319L21.8074 10.1358ZM35.6249 2.48166C37.6977 5.71319 41.1699 7.83024 44.5558 9.19681C47.9665 10.5734 51.4758 11.2637 53.8674 11.5306L54.2 8.54907C52.013 8.30505 48.7807 7.66687 45.6787 6.41486C42.5519 5.15287 39.7404 3.34134 38.1501 0.861973L35.6249 2.48166ZM53.8674 8.54907C51.4319 8.8208 47.8882 9.61602 44.4623 11.1211C41.0569 12.6173 37.5904 14.8933 35.5501 18.2315L38.1098 19.7961C39.6959 17.201 42.5299 15.2469 45.669 13.8677C48.7878 12.4975 52.0326 11.7724 54.2 11.5306L53.8674 8.54907ZM37.442 17.6443C31.8921 15.1641 27.1182 12.3728 22.7295 8.95264L20.8854 11.319C25.4915 14.9085 30.4799 17.819 36.2179 20.3833L37.442 17.6443ZM22.6416 11.3825C27.931 7.84325 32.3604 5.32058 37.4957 3.043L36.2794 0.300624C30.9539 2.66257 26.3728 5.27624 20.9733 8.88913L22.6416 11.3825Z" fill="#C7A250" />
+                <path d="M168.169 18.0826H63.524" stroke="#C7A250" stroke-width="3" stroke-linecap="round" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M184.618 9.81427C180.955 15.5252 172.05 17.6714 167.472 18.1823C172.074 18.6958 181.049 21.223 184.675 27.1562C190.319 24.634 195.2 21.7831 199.698 18.2783C194.353 14.7022 189.848 12.134 184.618 9.81427Z" fill="#C7A250" fill-opacity="0.75" />
+                <path d="M184.618 9.81427L183.355 9.00443C183.755 8.38135 184.549 8.14297 185.226 8.44308L184.618 9.81427ZM167.472 18.1823L167.305 19.673C166.546 19.5883 165.972 18.9463 165.972 18.1823C165.972 17.4182 166.546 16.7763 167.305 16.6915L167.472 18.1823ZM184.675 27.1562L185.287 28.5257C184.599 28.8334 183.789 28.582 183.395 27.9385L184.675 27.1562ZM199.698 18.2783L200.532 17.0316C200.932 17.2993 201.179 17.7429 201.197 18.224C201.214 18.7052 201 19.1655 200.62 19.4614L199.698 18.2783ZM185.88 10.6241C183.808 13.8556 180.335 15.9727 176.949 17.3393C173.539 18.7158 170.029 19.4062 167.638 19.673L167.305 16.6915C169.492 16.4475 172.724 15.8093 175.827 14.5573C178.953 13.2953 181.765 11.4838 183.355 9.00443L185.88 10.6241ZM167.638 16.6915C170.073 16.9633 173.617 17.7585 177.043 19.2636C180.448 20.7597 183.915 23.0358 185.955 26.374L183.395 27.9385C181.809 25.3435 178.975 23.3893 175.836 22.0102C172.717 20.64 169.473 19.9149 167.305 19.673L167.638 16.6915ZM184.063 25.7868C189.613 23.3065 194.387 20.5152 198.776 17.0951L200.62 19.4614C196.014 23.0509 191.025 25.9614 185.287 28.5257L184.063 25.7868ZM198.864 19.5249C193.574 15.9857 189.145 13.463 184.01 11.1855L185.226 8.44308C190.551 10.805 195.132 13.4187 200.532 17.0316L198.864 19.5249Z" fill="#C7A250" />
+            </svg>
 
         </div>
-        <!-- End Section Title -->
-        <div class="container">
-            <div class="row gy-4 justify-content-center">
-                <div class="col-xl-4 col-md-6 d-flex " data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-item position-relative  rounded-4">
-                        <i class="bi bi-laptop"></i>
-                        <h4>
-                            <a href="" class="stretched-link"> ﬁ‰Ì… «·„⁄·Ê„« </a>
-                        </h4>
-                        <p>Ìﬁœ„ ﬁ”„  ﬁ‰Ì… «·„⁄·Ê„«  ›Ì «·„⁄Âœ »—«„Ã  ⁄·Ì„Ì… „ ﬂ«„·… · √ÂÌ· «·ÿ·«» ›Ì „Ã«·«   ﬂ‰Ê·ÊÃÌ« «·„⁄·Ê„«  Ê«·»—„Ã… Ê≈œ«—… «·√‰Ÿ„… «·ÕœÌÀ….</p>
-                    </div>
-                </div>
-                <!-- End Service Item -->
-                <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-item position-relative rounded-4">
-                        <i class="bi bi-calculator"></i>
-                        <h4>
-                            <a href="" class="stretched-link">«·„Õ«”»… </a>
-                        </h4>
-                        <p>Ìﬁœ„ ﬁ”„ «·„Õ«”»… ›Ì «·„⁄Âœ »—«„Ã  ⁄·Ì„Ì… „ ﬂ«„·…  Âœ› ≈·Ï  √ÂÌ· «·ÿ·«» »«·„⁄—›… Ê«·„Â«—«  «··«“„… ··‰Ã«Õ ›Ì „Ã«·«  «·„Õ«”»… Ê«·„«·Ì….</p>
-                    </div>
-                </div>
-                <!-- End Service Item -->
-                <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-item position-relative rounded-4">
-                        <i class="bi bi-briefcase"></i>
-                        <h4>
-                            <a href="" class="stretched-link">«œ«—… «·«⁄„«· </a>
-                        </h4>
-                        <p>Ìﬁœ„ ﬁ”„ ≈œ«—… «·√⁄„«· ›Ì «·„⁄Âœ »—«„Ã  ⁄·Ì„Ì… „ ﬂ«„·…  Âœ› ≈·Ï  √ÂÌ· «·ÿ·«» »«·„⁄«—› Ê«·„Â«—«  «··«“„… ··‰Ã«Õ ›Ì ⁄«·„ «·√⁄„«· «·ÕœÌÀ</p>
-                    </div>
-                </div>
-                <!-- End Service Item -->
-
-            </div>
-        </div>
-    </section>
-    <!-- /Services Section -->
+           
     
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
-
-        <!-- Section Title -->
-        <div class="text-center mb-5 mt-5">
-            <div class="container section-title" data-aos="fade-up">
-                <h2>«·Œœ„«  «·«·ﬂ —Ê‰Ì…</h2>
-                <img src="img/imgdividor.svg" alt="Description of SVG">
+        <div class="row">
+            <!-- Card 1: —ƒÌ ‰« -->
+            <div class="col-md-6 mb-4">
+                <div class="card overflow-hidden shadow rounded-4 border-0">
+                    <div class="card-body p-3">
+                        <img class="img mb-3" src="/img/r.png" style="height:70px; width:40px;" alt="—ƒÌ ‰«" />
+                        <h2 class="fw-bolder">—ƒÌ‹‹ ‹‹‰‹‹«</h2>
+                        <p>
+                            «·‹—Ì‹«œ… Ê«· ‹„‹Ì“ ›Ì „Ã«· «·⁄·Ê„ «·≈œ—«Ì‹… Ê «·„‹«·‹Ì‹… Ê ﬁ‰Ì‹« 
+                            «·Õ«”‹Ê» ··Ê’‹Ê· »«·‹„⁄Âœ ≈·Ï „”‹ ÊÏ ⁄·‹„‹Ì Ì‹ ‹Ê«›ﬁ „⁄ «·„ƒ””‹«  «·„Õ‹·Ì‹…
+                            Ê«·‹œÊ·‹Ì‹….
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- End Section Title -->
-        <div class="container">
-            <div class="row gy-4">
-                <!-- «·»ÿ«ﬁ… «·√Ê·Ï: «·„‰’… «·≈·ﬂ —Ê‰Ì… -->
-                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="pricing-item justify-content-center text-center rounded-4" style="padding: 20px;">
-                        <i class=" bi bi-laptop" style="font-size: 77px; color: #571c05;"></i>
-                        <h4 class=" mb-3">«·„‰’… «·≈·ﬂ —Ê‰Ì…</h4>
-                        <p class="mb-4">
-                            «·„‰’… «·≈·ﬂ —Ê‰Ì… ··„⁄Âœ ‰ﬁÿ… «· ﬁ«¡ »Ì‰ «·ÿ·«» Ê«·√”« –…° ÕÌÀ  Ê›— »Ì∆…  ⁄·Ì„Ì… „ ﬂ«„·…  ‘„· „Õ ÊÏ √ﬂ«œÌ„Ì° „Ê«—œ  ⁄·Ì„Ì…° Ê√œÊ«   ›«⁄·Ì…  ”Â„ ›Ì  ⁄“Ì“  Ã—»… «· ⁄·„ Ê ”ÂÌ· «·Ê’Ê· ≈·Ï «·„⁄·Ê„«  Ê«·Œœ„«  .
+            <!--‰Â«Ì… ﬂ«—œ «·—ƒÌ… -->
+            <!-- Card 2: —”«· ‰« -->
+            <div class="col-md-6 mb-4">
+                <div class="card overflow-hidden shadow rounded-4 border-0">
+                    <div class="card-body p-3">
+                        <img class="img mb-3" src="/img/m.png" style="height:70px; width:40px;" alt="—”«· ‰«" />
+                        <h2 class="fw-bolder">—”‹«·‹ ‹‹‰‹«</h2>
+                        <p>
+
+
+                             ﬁ‹œÌ‹„ Ê≈⁄œ«œ »‹—«„‹Ã  ⁄·Ì‹„Ì… „Â‰‹Ì… Ê›‹ﬁ «·„⁄‹«ÌÌ‹— «·ﬁÌ‹«”Ì‹…
+                            ›‹Ì „Ã‹«· «·⁄‹·Ê„ «·≈œ«—Ì‹… Ê «·„«·‹Ì… Ê ﬁ‰Ì«  «·Õ‹«”Ê» Ê ÿ»Ìﬁ‹« Â Ì‹„ﬂ‰ „‰ Œ·«·Â« ≈⁄‹œ«œ ﬂ‹Ê«œ—
+                            ⁄·„Ì… „œ—»‹… Êﬁ«œ—… ⁄·Ï «·≈» ﬂ‹«— Ê«·„‰‹«›”… ›Ì ”Êﬁ «·⁄‹„·,
+                            »«·≈÷«›… ≈·Ï ≈Ã—«¡ „‘«—Ì⁄  ﬁÊ„ ⁄·Ï «· ﬁ‰Ì‹«  Ê«·„Â«—«  «·„ ÿÊ—… „· “„… »«·√Œ·«ﬁÌ«  «·„Â‰Ì… Ê«· Ê«’‹· „⁄ «·ÂÌ∆«  «·»ÕÀÌ… «·„Õ‹·Ì…
+                            ·«”‹ ›«¡ „ ÿ·»«  «·‰ÂÊ÷ »«·„Ã „⁄ ÊŒ‹œ„‹ Â.
                         </p>
-                        <a href="#" class="buy-btn">”Ã· «·√‰</a>
                     </div>
                 </div>
-                <!-- End Pricing Item -->
-                <!-- «·»ÿ«ﬁ… «·À«‰Ì…:  ”ÃÌ· «·„Õ«÷—«  -->
-                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="pricing-item featured text-center rounded-4" style="padding: 20px;">
-                        <i class="mt-3 fas fa-video" style="font-size: 77px; color: #571c05;"></i>
-                        <h4 class="mt-3 mb-3 "  > ”ÃÌ· «·„Õ«÷—« </h4>
-                        <p class="mb-4">
-                             ﬁœ„ Œœ„…  ”ÃÌ· «·„Õ«÷—«  ··ÿ·«» ≈„ﬂ«‰Ì… «·Ê’Ê· ≈·Ï „Õ ÊÏ «·œ—Ê” ›Ì √Ì Êﬁ  Ê„‰ √Ì „ﬂ«‰° „„« Ì”Â· ⁄·ÌÂ„ „—«Ã⁄… «·„⁄·Ê„«  Ê›Â„Â« »‘ﬂ· √⁄„ﬁ° ÊÌ⁄““ „‰ ›⁄«·Ì… ⁄„·Ì… «· ⁄·„.
-                        </p>
-                        <a href="#" class="buy-btn">”Ã· «·√‰</a>
-                    </div>
-                </div>
-                <!-- End Pricing Item -->
-                <!-- «·»ÿ«ﬁ… «·À«·À…: «·„ﬂ »… «·≈·ﬂ —Ê‰Ì… -->
-                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="pricing-item text-center rounded-4" style="padding: 20px;">
-                        <i class=" mt-3 fas fa-book" style="font-size: 77px; color: #571c05;"></i>
-                        <h4 class="mt-3 mb-3">«·„ﬂ »… «·≈·ﬂ —Ê‰Ì…</h4>
-                        <p class="mb-4">
-                            «·„ﬂ »… «·≈·ﬂ —Ê‰Ì… ··„⁄Âœ  Ê›— ··ÿ·«» „Ã„Ê⁄… Ê«”⁄… „‰ «·ﬂ » Ê«·„’«œ— «·√ﬂ«œÌ„Ì… «· Ì Ì„ﬂ‰ «·Ê’Ê· ≈·ÌÂ« »”ÂÊ·…° „„« Ì”Â„ ›Ì  ⁄“Ì“ «·„⁄—›… Ê«· ⁄·„ «·–« Ì ›Ì „Œ ·› «· Œ’’« .
-                        </p>
-                        <a href="#" class="buy-btn">”Ã· «·√‰</a>
-                    </div>
-                </div>
-                <!-- End Pricing Item -->
             </div>
-        </div>
-        </section>
+            <!--‰Â«Ì… ﬂ«—œ —”«·…-->
+             <!-- Card 3: ﬁÌ„‰« -->
+            <div class="col-md-6 mb-4">
+                <div class="card overflow-hidden shadow rounded-4 border-0">
+                    <div class="card-body p-3">
+                        <img class="img mb-3" src="/img/m.png" style="height:70px; width:40px;" alt="ﬁÌ„‰«" />
+                        <h2 class="fw-bolder">—”‹«·‹ ‹‹‰‹«</h2>
+                        <p>
 
-    <!-- /Pricing Section -->
-    <!-- Section Statistics -->
-    <div class="text-center mt-5 mb-5">
-        <div class="container section-title" data-aos="fade-up">
-            <h2>«·«Õ’«∆Ì« </h2>
-            <img src="img/imgdividor.svg" alt="Description of SVG">
-        </div>
-    </div>
 
-    <section id="statistics" class="py-5 bg-light mt-3 mb-3">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-3 mb-3 d-flex flex-column align-items-center">
-                    <div class="text-center">
-                        <h3 class="m-0">1200+</h3>
-                        <p class="m-0">⁄œœ «·ÿ·«»</p>
+                             ﬁ‹œÌ‹„ Ê≈⁄œ«œ »‹—«„‹Ã  ⁄·Ì‹„Ì… „Â‰‹Ì… Ê›‹ﬁ «·„⁄‹«ÌÌ‹— «·ﬁÌ‹«”Ì‹…
+                            ›‹Ì „Ã‹«· «·⁄‹·Ê„ «·≈œ«—Ì‹… Ê «·„«·‹Ì… Ê ﬁ‰Ì«  «·Õ‹«”Ê» Ê ÿ»Ìﬁ‹« Â Ì‹„ﬂ‰ „‰ Œ·«·Â« ≈⁄‹œ«œ ﬂ‹Ê«œ—
+                            ⁄·„Ì… „œ—»‹… Êﬁ«œ—… ⁄·Ï «·≈» ﬂ‹«— Ê«·„‰‹«›”… ›Ì ”Êﬁ «·⁄‹„·,
+                            »«·≈÷«›… ≈·Ï ≈Ã—«¡ „‘«—Ì⁄  ﬁÊ„ ⁄·Ï «· ﬁ‰Ì‹«  Ê«·„Â«—«  «·„ ÿÊ—… „· “„… »«·√Œ·«ﬁÌ«  «·„Â‰Ì… Ê«· Ê«’‹· „⁄ «·ÂÌ∆«  «·»ÕÀÌ… «·„Õ‹·Ì…
+                            ·«”‹ ›«¡ „ ÿ·»«  «·‰ÂÊ÷ »«·„Ã „⁄ ÊŒ‹œ„‹ Â.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-3 mb-3 d-flex flex-column align-items-center">
-                    <div class="text-center">
-                        <h3 class="m-0">300+</h3>
-                        <p class="m-0">⁄œœ «·œÊ—« </p>
-                    </div>
+            </div>
+            <!--‰Â«Ì… ﬂ«—œ —”«·…-->
+        </div>
+      
+    
+
+       
+    </section>
+
+    <!-- ﬁ”„ «·≈‰Ã«“«  -->
+    <section class="achievements">
+        @* <div class="container"> *@
+            <h2>≈‰Ã«“« ‰«</h2>
+            <div class="achievement-stats">
+                <div class="stat">
+                    <h3>2000+</h3>
+                    <p>ÿ«·» „”Ã·</p>
                 </div>
-                <div class="col-md-3 mb-3 d-flex flex-column align-items-center">
-                    <div class="text-center">
-                        <h3 class="m-0">50+</h3>
-                        <p class="m-0">⁄œœ «·„⁄·„Ì‰</p>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3 d-flex flex-column align-items-center">
-                    <div class="text-center">
-                        <h3 class="m-0">100%</h3>
-                        <p class="m-0">‰”»… «·‰Ã«Õ</p>
-                    </div>
+                <div class="stat">
+                    <h3>500+</h3>
+                    <p>Œ—ÌÃ</p>
                 </div>
             </div>
         </div>
