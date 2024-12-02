@@ -19,10 +19,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Ainshmes.styles.css" asp-append-version="true" />
+    @* <link rel="stylesheet" href="/css/styles.css" asp-append-version="true" /> *@
+  @*   <link rel="stylesheet" href="~/Ainshmes.styles.css" asp-append-version="true" /> *@
     <!-- Core theme CSS-->
-    <link href="/css/site.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
       <!-- مكتبة aos للحركات CSS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -31,7 +31,7 @@
         <!-- TOP HEAD -->
         <div class="topbar">
             <div class="row">
-                <div class="col-md-6 tp-right">
+                <div class="col-md-8 tp-right">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -39,7 +39,7 @@
                     <a href="mailto:contact@example.com"><i class="fas fa-envelope m-md-1"></i></a>
                     <a href="#"><span>092-2108855</span><i class="fas fa-phone m-md-1"></i></a>
                 </div>
-                <div class="col-md-6 tp-left text-start">
+                <div class="col-md-4 tp-left text-start">
                     <a href="#"><i class="bi bi-person"></i></a>
                     <a href="#"><i class="bi bi-box-arrow-in-right"></i></a>
                     <a href="#"><i class="bi bi-box-arrow-left"></i></a>
@@ -107,11 +107,9 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action=""> مكتب التسجيل والقبول</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="TablesStudy">مكتب خدمة المجتمع والبيئة</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="TablesFinel">مكتب البحث العلمي</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="TablesStudy">مكتب الأمن والسلامة</a></li>
-
-
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="">مكتب خدمة المجتمع والبيئة</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="">مكتب البحث العلمي</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="">مكتب الأمن والسلامة</a></li>
                             </ul>
                         </li>
                         <!-- قائمة منسدلة  -->
@@ -122,13 +120,15 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action=""> قوائم الخريجين</a></li>
                                 <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Acadimyy">الجداول والتقويمات</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="TablesStudy">الكتيبات والادلة</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="TablesStudy">المكتبة الرقمية</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="">الكتيبات والادلة</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="">المكتبة الرقمية</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="TablesFinel"> جـداول الامتحانات النهائية</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="TablesStudy">الجداول الدراسية</a></li>
                             
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About1">الأخـبار</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="">الأخـبار</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">تـواصـل معنا</a>

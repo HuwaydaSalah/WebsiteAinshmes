@@ -1146,28 +1146,12 @@ section,
             opacity: 0.9;
         }
 
-    .hero-text p {
-        font-size: 24px;
-        margin: 10px 0 0;
+        .hero-text p {
+            font-size: 24px;
+            margin: 10px 0 0;
+        }
     }
-/*--------------------------------------------------------------
-#  boss Section
---------------------------------------------------------------*/
 
-.content-section {
-    padding: 40px;
-}
-.dean-image {
-    max-width: 200px;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-
-.dean-message {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #333;
-}
 /*--------------------------------------------------------------
 #  Team Section
 --------------------------------------------------------------*/
